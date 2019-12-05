@@ -97,7 +97,7 @@ class ProductsController extends \yii\web\Controller
         $query = Products::find()->where(['id' => $id])->one();
         $product_images = ProductImages::find()->where(['product_id' => $id,'delete_status' => 0])->all();   
 
-        $modelenquiry = new Inbox();   
+        $modelenquiry = new Inbox();     
 
         $enquirymasters = Enquirymasters::find()->where(['delete_status' => 0 ])->all();
 

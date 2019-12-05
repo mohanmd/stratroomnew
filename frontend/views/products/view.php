@@ -306,7 +306,7 @@ foreach ($images as $key => $image) {
           			  </a>  
 
             </label>   
-				 
+				    
         </h4>
 		
       </div>

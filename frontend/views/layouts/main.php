@@ -228,7 +228,7 @@ $enquirymasters = Enquirymasters::find()->where(['delete_status' => 0 ])->all();
 				 
         </h4>
 		
-      </div>   
+      </div>     
 	  
 	    <div id="collapseOne0" class="panel-collapse collapse in">
         <div class="panel-body">
