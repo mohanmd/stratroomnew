@@ -6,7 +6,6 @@ import { IonicModule } from '@ionic/angular';
 
 import { MeetingeditpopupPageRoutingModule } from './meetingeditpopup-routing.module';
 
-import { MeetingeditpopupPage } from './meetingeditpopup.page';
 
 
 @NgModule({
@@ -16,6 +15,6 @@ import { MeetingeditpopupPage } from './meetingeditpopup.page';
     IonicModule,
     MeetingeditpopupPageRoutingModule
   ],
-  declarations: [MeetingeditpopupPage]
+  declarations: []
 })
 export class MeetingeditpopupPageModule {}

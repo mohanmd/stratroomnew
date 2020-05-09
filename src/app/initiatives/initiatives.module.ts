@@ -15,7 +15,11 @@ import { IntiativeModalpopupPage } from '../intiative-modalpopup/intiative-modal
     CommonModule,
     FormsModule,
     IonicModule,
+<<<<<<< HEAD
     InitiativesPageRoutingModule
+=======
+    InitiativesPageRoutingModule,
+>>>>>>> 748e1f7a80c9edea4bce34c2f1de4f2eba21c3c7
   ],
   declarations: [
     InitiativesPage, 

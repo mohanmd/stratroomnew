@@ -8,6 +8,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DatePicker } from '@ionic-native/date-picker/ngx';
+import { Ionic4DatepickerModule } from '@logisticinfotech/ionic4-datepicker';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,11 +18,13 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    Ionic4DatepickerModule
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    DatePicker,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
