@@ -12,7 +12,11 @@
    <ion-col>
     <ion-item  class="date_input" lines="none">
       <ion-label>Date</ion-label>
-      <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+      <ion-input readonly [(ngModel)]="mydate"
+      [liIonic4Datepicker]="datePickerObj"
+      (ionchange)="myFunction()">
+      
+  </ion-input>
     </ion-item>
    </ion-col>
   </ion-row>
