@@ -1,0 +1,95 @@
+<ion-header class="ion-no-border font">
+  <ion-toolbar class="heading_top">
+
+
+    <ion-buttons slot="start">
+      <ion-button (click)="dismiss('dismissed')">
+        <ion-icon name="chevron-back-outline" size="md" ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="secondary">
+
+      <ion-button (click)="goLogin()">
+        <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <!--<ion-title class="ion-text-center text_upper font font-weight" *ngIf="data">Add Initiative</ion-title>-->
+    <ion-title class="ion-text-center text_upper font font-weight" *ngIf="budgetdata">Edit Budget</ion-title>
+    <!--<ion-title class="ion-text-center text_upper font" *ngIf="iniativedata">Edit Initiative</ion-title>-->
+  </ion-toolbar>
+  <ion-row class="header-bottom">
+    <img src="../../assets/profile.svg" class="img_top">
+    <h6 class="text_upper font">Human Resource</h6>
+  </ion-row>
+</ion-header>
+
+
+<ion-content class="ion-padding font">
+  <ion-item class="bg_input marg_bot_10 font" lines="none">
+    <ion-label position="stacked">Total</ion-label>
+    <ion-input  inputmode="text"></ion-input>
+  </ion-item>
+  <ion-item class="bg_input marg_bot_10 font" lines="none">
+    <ion-label position="stacked">Utilized</ion-label>
+    <ion-input  inputmode="text"></ion-input>
+  </ion-item><ion-item class="bg_input marg_bot_10 font" lines="none">
+    <ion-label position="stacked">Balance</ion-label>
+    <ion-input  inputmode="text"></ion-input>
+  </ion-item>
+  <ion-item class="bg_input marg_bot_10 font" lines="none">
+    <ion-label position="stacked">Actual</ion-label>
+    <ion-input  inputmode="text"></ion-input>
+  </ion-item>
+  <ion-item class="bg_input marg_bot_10 font" lines="none">
+    <ion-label position="stacked">Target</ion-label>
+    <ion-input  inputmode="text"></ion-input>
+  </ion-item>
+  <ion-item class="bg_input marg_bot_10 font" lines="none">
+    <ion-label position="stacked">Budget</ion-label>
+    <ion-input  inputmode="text"></ion-input>
+  </ion-item>
+<ion-item class="bg_input marg_bot_10 font" lines="none">
+    <ion-label position="stacked">Forecast</ion-label>
+    <ion-input  inputmode="text"></ion-input>
+  </ion-item>
+
+
+
+      <ion-item lines="none" class="ion-text-right font">
+        <ion-button color="light">cancel</ion-button>
+        <ion-button color="dark">Save</ion-button>
+      </ion-item>
+
+
+
+  <!--<div class="ion-padding">-->
+
+  <!--<ion-calendar [(ngModel)]="date"-->
+  <!--(onChange)="onChange($event)"-->
+  <!--[type]="type"-->
+  <!--[format]="'YYYY-MM-DD'">-->
+  <!--</ion-calendar>-->
+
+  <!--</div>-->
+  <!--&lt;!&ndash;<div class="ion-padding">&ndash;&gt;-->
+
+  <!--<ion-calendar [(ngModel)]="dateMulti"-->
+  <!--[options]="optionsMulti"-->
+  <!--[type]="type"-->
+  <!--[format]="'YYYY-MM-DD'">-->
+  <!--</ion-calendar>-->
+
+  <!--</div>-->
+
+
+  <!--<div class="ion-padding">-->
+
+  <!--<ion-calendar [(ngModel)]="dateRange"-->
+  <!--[options]="optionsRange"-->
+  <!--[type]="type"-->
+  <!--[format]="'YYYY-MM-DD'">-->
+  <!--</ion-calendar>-->
+
+  <!--</div>-->
+</ion-content>
