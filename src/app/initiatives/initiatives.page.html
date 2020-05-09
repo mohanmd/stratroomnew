@@ -1,0 +1,212 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="presentModal()">
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button (click)="goLogin1()">
+        <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center text_upper">My Initiative</ion-title>
+  </ion-toolbar> 
+  <ion-row class="header-bottom">
+    <img src="../../assets/profile.svg">
+    <h6 class="text_upper">Human Resource</h6>
+  </ion-row> 
+</ion-header>
+
+<ion-content>
+  <ion-card class="border_yellow" (click)="goDetail()">
+    <ion-card-header  class="ion-no-padding">
+      <ion-item lines="none">
+        <ion-avatar slot="start" >
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+        </ion-avatar>
+        <p>Increase the influence of customer's views</p>
+        <ion-icon (click)="presentModal()" src="../../assets/icon/Edit.svg" color="dark" class="btn-edit" ></ion-icon>  
+        <ion-icon  src="../../assets/icon/Delete.svg" color="dark" ></ion-icon>  
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="8">
+          <ion-label>Department 1</ion-label>
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col class="due_date"  size="4">
+          <ion-label>Due Date</ion-label>
+          <ion-text>Oct 11,2020</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="border_green" (click)="goDetail()">
+    <ion-card-header  class="ion-no-padding">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+        </ion-avatar>
+        <p>Increase the influence of customer's views</p>
+        <ion-icon  src="../../assets/icon/Edit.svg" color="dark" class="btn-edit"  size="md"></ion-icon>  
+        <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="8">
+          <ion-label>Department 2</ion-label>
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col class="due_date"  size="4">
+          <ion-label>Due Date</ion-label>
+          <ion-text>Oct 11,2020</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="border_red" (click)="goDetail()">
+    <ion-card-header  class="ion-no-padding">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+        </ion-avatar>
+        <p>Increase the influence of customer's views</p>
+        <ion-icon  src="../../assets/icon/Edit.svg" color="dark" class="btn-edit"  size="md"></ion-icon>  
+        <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="8">
+          <ion-label>Department 3</ion-label>
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col class="due_date"  size="4">
+          <ion-label>Due Date</ion-label>
+          <ion-text>Oct 11,2020</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="border_green" (click)="goDetail()">
+    <ion-card-header  class="ion-no-padding">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+        </ion-avatar>
+        <p>Increase the influence of customer's views</p>
+        <ion-icon  src="../../assets/icon/Edit.svg" color="dark" class="btn-edit"  size="md"></ion-icon>  
+        <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="8">
+          <ion-label>Department 4</ion-label>
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col class="due_date"  size="4">
+          <ion-label>Due Date</ion-label>
+          <ion-text>Oct 11,2020</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="border_yellow" (click)="goDetail()">
+    <ion-card-header  class="ion-no-padding">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+        </ion-avatar>
+        <p>Increase the influence of customer's views</p>
+        <ion-icon  src="../../assets/icon/Edit.svg" color="dark" class="btn-edit"  size="md"></ion-icon>  
+        <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
+      </ion-item>
+    </ion-card-header>
+    <ion-card-content class="ion-no-padding">
+      <ion-row>
+        <ion-col size="8">
+          <ion-label>Department 6</ion-label>
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col class="due_date"  size="4">
+          <ion-label>Due Date</ion-label>
+          <ion-text>Oct 11,2020</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+    
+    <ion-card class="border_yellow" (click)="goDetail()">
+      <ion-card-header  class="ion-no-padding">
+        <ion-item lines="none">
+          <ion-avatar slot="start">
+            <ion-img src="../../assets/profile.jpg"></ion-img>
+          </ion-avatar>
+          <p>Increase the influence of customer's views</p>
+          <ion-icon  src="../../assets/icon/Edit.svg" color="dark" class="btn-edit"  size="md"></ion-icon>  
+          <ion-icon  src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon> 
+        </ion-item>
+      </ion-card-header>
+      <ion-card-content class="ion-no-padding">
+        <ion-row>
+          <ion-col size="8">
+            <ion-label>Department 7</ion-label>
+            <div class="progress_bar">
+              <ion-progress-bar value="0.5"></ion-progress-bar>80%
+            </div>
+          </ion-col>
+          <ion-col class="due_date"  size="4">
+            <ion-label>Due Date</ion-label>
+            <ion-text>Oct 11,2020</ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
+
+
+
+<ion-footer class="ion-no-border" translucent>
+  <ion-row >
+    <ion-col size="4" class="ion-no-padding bg_theme">
+      <ion-button expand="block" class="profile bg_theme">
+        <ion-icon name="person-outline" size="small" ></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme_green">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme">
+      <ion-button class="notification bg_theme">
+        <ion-icon name="settings-outline" size="small" ></ion-icon>
+      </ion-button>
+    </ion-col>
+    <!-- <ion-col  size="3" class="ion-no-padding">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col> -->
+  </ion-row>
+</ion-footer>

@@ -1,0 +1,647 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button class="edit-btn" >
+        <ion-icon   src="../../assets/icon/Edit.svg"  size="small"></ion-icon>        
+      </ion-button>
+      <ion-button (click)="goLogin()">
+        <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center text_upper">Initiative Detail</ion-title>
+  </ion-toolbar> 
+  <ion-row class="header-bottom">
+    <img src="../../assets/profile.svg">
+    <h6 class="text_upper">Human Resource</h6>
+  </ion-row> 
+</ion-header>
+
+<ion-content>
+  <ion-segment   [(ngModel)]="selectTabs">
+    <ion-segment-button value="budget" >
+      <ion-icon src="../../assets/icon/initiative/budget.svg" siz="small"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="activity" >
+      <ion-icon src="../../assets/icon/initiative/Activity.svg" siz="small"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="chart" >
+      <ion-icon src="../../assets/icon/initiative/Charts.svg" siz="small"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="comments">
+      <ion-icon src="../../assets/icon/initiative/Comments.svg" siz="small"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="milestone">
+      <ion-icon src="../../assets/icon/initiative/Milestone.svg" siz="small"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="sub_initiative">
+      <ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" siz="small"></ion-icon>
+    </ion-segment-button>
+    <!-- <ion-segment-button value="attachment">
+      <ion-icon src="../../assets/icon/attachment.svg" siz="small"></ion-icon>
+    </ion-segment-button> -->
+  </ion-segment>
+
+  <!-- <div *ngIf="selectTabs == 'camera'">
+    camera
+  </div>     -->
+
+
+<!-- <ion-grid>
+  <ion-row class="tab-icon" (click)="goBudget()">
+    <ion-col>
+      <ion-icon src="../../assets/icon/initiative/budget.svg" siz="md"></ion-icon>
+    </ion-col>
+    <ion-col>
+      <ion-icon src="../../assets/icon/initiative/Activity.svg" siz="md"></ion-icon>
+    </ion-col>
+    <ion-col>
+      <ion-icon src="../../assets/icon/initiative/Charts.svg" siz="md"></ion-icon>
+    </ion-col>
+    <ion-col>
+      <ion-icon src="../../assets/icon/initiative/Comments.svg" siz="md"></ion-icon>
+    </ion-col>
+    <ion-col>
+      <ion-icon src="../../assets/icon/initiative/Milestone.svg" siz="md"></ion-icon>
+    </ion-col>
+    <ion-col>
+      <ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" siz="md"></ion-icon>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
+  <!-- budget -->
+  <ion-grid class="top-curve" *ngIf="selectTabs == 'budget'">
+    <ion-row class="content-row">
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Total</p>
+          <p class="ion-text-center content_text">$5000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Utilized</p>
+          <p class="ion-text-center content_text">$20,000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div >
+          <p class="title text_upper">Balance</p>
+          <p class="ion-text-center content_text">$30,000</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="content-row">
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Actual</p>
+          <p class="ion-text-center content_text">$50,000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Target</p>
+          <p class="ion-text-center content_text">$20,000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div >
+          <p class="title text_upper">Budget</p>
+          <p class="ion-text-center content_text">$20,000</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="content-row border_bottom">
+      <ion-col size="4" >
+      </ion-col>
+      <ion-col size="4" >
+        <div >
+          <p class="title text_upper">Forecast</p>
+          <p class="ion-text-center content_text">$20,000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- budget end  -->
+
+  <!-- customer influence -->
+  <ion-grid class="top-curve" *ngIf="selectTabs == 'budget1'">
+    <ion-row class="padding">
+      <ion-col size="8">
+        <p class="top-text">Increase the influence of customer's view</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="content-row">
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Initiaive id</p>
+          <p class="ion-text-center content_text">001</p>
+        </div>
+      </ion-col>
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Start Date</p>
+          <p class="ion-text-center content_text">jan 02,2020</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div >
+          <p class="title text_upper">End Date</p>
+          <p class="ion-text-center content_text">jan 02,2020</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="content-row">
+      <ion-col size="2" >
+      </ion-col>
+      <ion-col size="4">
+        <div class="border_right">
+          <p class="title text_upper">Remaining</p>
+          <p class="ion-text-center content_text">240 Days</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="border_right">
+          <p class="title text_upper ">Status</p>
+          <p class="status_col ion-text-center content_text">Good 
+            <ion-icon  src="../../assets/icon/initiative/like.svg"></ion-icon>
+            <ion-icon  src="../../assets/icon/initiative/unlike.svg"></ion-icon>
+          </p>
+        </div>
+      </ion-col>
+      <ion-col size="2">
+      </ion-col>
+    </ion-row>
+
+    <!-- progress bar -->
+    <ion-row class="padding">
+      <ion-col>
+        <ion-label class="title text_upper font-bold">progress</ion-label>
+        <div class="progress_bar">
+          <ion-progress-bar value="0.5"></ion-progress-bar>80%
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row  class="padding">
+      <ion-col>
+        <ion-label class="title text_upper font-bold">impact</ion-label>
+        <p class="impact_txt">Maruis imperdiet orci dapibus, commodo libero nec</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- customer influence -->
+      
+  <!-- activity  -->
+  <ion-grid class="top-curve" *ngIf="selectTabs == 'activity'">
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Activity
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Activity
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Activity
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+  <!-- activity  end --> 
+  
+  <!-- chart  -->
+  <ion-grid class="top-curve" *ngIf="selectTabs == 'chart'">
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Chart
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Chart
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0 ion-text-right">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Chart
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0 ion-text-right">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+  <!-- Chart  end -->
+
+   <!-- Comments   -->
+   <ion-grid class="top-curve comments_tab" *ngIf="selectTabs == 'comments'">
+    <ion-card class="activity_card">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+        </ion-avatar>
+        <p  slot="start">Elmer Roberts</p>
+        <ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>
+      </ion-item>
+
+      <ion-item lines="none">
+        <p class="marg_0">Lorem Ipsem Lorem Ipsem Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
+      </ion-item>
+
+      <ion-row class="comments_action">
+        <p class="marg_0">Reply</p>
+        <p class="marg_0">Like</p>
+        <p class="marg_0 date">Oct 11, 2020</p>
+      </ion-row>
+    </ion-card>
+
+    <ion-card class="activity_card">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+        </ion-avatar>
+        <p  slot="start">Elmer Roberts</p>
+        <ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>
+      </ion-item>
+
+      <ion-item lines="none">
+        <p class="marg_0">Lorem Ipsem Lorem Ipsem Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
+      </ion-item>
+
+      <ion-row class="comments_action">
+        <p class="marg_0">Reply</p>
+        <p class="marg_0">Like</p>
+        <p class="marg_0 date">Oct 11, 2020</p>
+      </ion-row>
+    </ion-card>
+    
+    <ion-card class="activity_card">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+        </ion-avatar>
+        <p  slot="start">Elmer Roberts</p>
+        <ion-icon name="ellipsis-vertical-outline" color="dark" size="md" slot="end"></ion-icon>
+      </ion-item>
+
+      <ion-item lines="none">
+        <p class="marg_0">Lorem Ipsem Lorem Ipsem Lorem Ipsem Lorem Ipsem Lorem Ipsem</p>
+      </ion-item>
+
+      <ion-row class="comments_action">
+        <p class="marg_0">Reply</p>
+        <p class="marg_0">Like</p>
+        <p class="marg_0 date">Oct 11, 2020</p>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+  <!-- Comments  end -->  
+
+  <!-- milestone  -->
+  <ion-grid class="top-curve milestone" *ngIf="selectTabs == 'milestone'">
+    <ion-card class="activity_card">
+      <ion-item lines="none">
+        <ion-label>Lorem, ipsum dolor sit amet</ion-label>
+        <ion-badge color="success" slot="end">Complted</ion-badge>
+      </ion-item>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+
+    <ion-card class="activity_card">
+      <ion-item lines="none">
+        <ion-label>Lorem, ipsum dolor sit amet</ion-label>
+        <ion-badge color="success" slot="end">Complted</ion-badge>
+      </ion-item>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    
+    <ion-card class="activity_card">
+      <ion-item lines="none">
+        <ion-label>Lorem, ipsum dolor sit amet</ion-label>
+        <!-- <p class="marg_0" slot="start"> </p> -->
+        <ion-badge color="success" slot="end">Complted</ion-badge>
+      </ion-item>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+  <!-- Chart  end -->
+
+   <!-- Sub initiative  -->
+   <ion-grid class="top-curve" *ngIf="selectTabs == 'sub_initiative'">
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Sub Initiative
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Sub Initiative
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    
+    <ion-card class="activity_card">
+      <ion-row class="ion-align-items-center">
+        <ion-col size="4">
+          <ion-text>
+            Sub Initiative
+          </ion-text>
+        </ion-col>
+        <ion-col size="8">
+          <div class="profile_img_act">
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <ion-img src="../../assets/profile.jpg"></ion-img>
+          <span class="more">+3</span>
+          
+          <ion-icon slot="end" src="../../assets/icon/Edit.svg"  class="btn-edit" ></ion-icon>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="8">
+          <div class="progress_bar">
+            <ion-progress-bar value="0.5"></ion-progress-bar>80%
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>
+            <p class="marg_0">Oct 11, 2020</p>
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+  <!-- Sub initiative  end -->
+
+  
+</ion-content>
+
+<ion-footer class="ion-no-border" translucent>
+  <ion-row >
+    <ion-col size="4" class="ion-no-padding bg_theme">
+      <ion-button expand="block" class="profile bg_theme">
+        <ion-icon name="person-outline" size="small" ></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme_green">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme">
+      <ion-button class="notification bg_theme">
+        <ion-icon name="settings-outline" size="small" ></ion-icon>
+      </ion-button>
+    </ion-col>
+    <!-- <ion-col  size="3" class="ion-no-padding">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col> -->
+  </ion-row>
+</ion-footer>

@@ -1,0 +1,80 @@
+ion-card{
+    margin: 0;
+    box-shadow: none;
+    ion-card-header{
+        padding: 0;
+    }
+}
+
+
+ion-content{
+    h4{
+        font-size: 18px;
+        color: #292526;
+        font-weight: 900;
+    }
+    ion-item{
+        --padding-start: 0;
+        --inner-padding-end: 0;
+        ion-input{
+            border: 2px solid #000;
+            border-radius: 100px;
+            padding: 0px 15px !important;
+        }
+        ion-label{
+            margin-bottom: 15px;
+            font-size: 4vw;
+        }
+    }
+    .forget_save{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .forget_paswd {
+            text-align: right;
+            a{
+                color: #000;
+                text-decoration: none;
+                font-size: 4vw;
+            }
+        }
+    }
+
+    .login{
+        --background: #1e252d;
+        --background-focused: #161b20;
+        --background-activated: #161b20;
+    }
+    .login_sso{
+        --background: transparent;
+        --box-shadow: none;
+        color: rgb(0, 0, 0);
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    .or_text{
+        text-align: center;
+        display: block;
+        width: 50px;
+        margin: auto;
+        background: #fff;
+    }
+    .bg_line{
+        background: url('../../assets/icon/minus.svg');
+        width: 150px;
+        margin: auto;
+        margin-top: 15px;
+    }
+}
+
+ion-card-content{
+    padding-top: 0;
+}
+
+.save_paswd_act{
+    display: flex;
+    align-items: center;
+    ion-checkbox{
+        margin-right: 6px;
+        --border-radius: 10px;
+    }
+}

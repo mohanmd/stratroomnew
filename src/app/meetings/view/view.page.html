@@ -1,0 +1,312 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button class="edit-btn" (click)="editpopup()">
+        <ion-icon class="edit-icon" src="../../assets/icon/Edit.svg"  color="light" ></ion-icon>
+      </ion-button>
+      <ion-button (click)="goLogin()">
+        <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="dark" size="small"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center text_upper">Sales Meeting</ion-title>
+  </ion-toolbar> 
+  <ion-row class="header-bottom">
+    <img src="../../assets/profile.svg">
+    <h6 class="text_upper">Human Resource</h6>
+  </ion-row> 
+</ion-header>
+
+<ion-content>
+  <ion-segment   [(ngModel)]="selectTabs">
+    <ion-segment-button value="view" >
+      <ion-img src ="../../assets/icon/eye.png"></ion-img>
+    </ion-segment-button>
+    <ion-segment-button value="notes" >
+      <ion-img src ="../../assets/icon/Notes.png"></ion-img>
+    </ion-segment-button>
+    <ion-segment-button value="action" >
+      <ion-img src ="../../assets/icon/Action.png"></ion-img>
+    </ion-segment-button>
+    <ion-segment-button value="attachment">
+      <ion-img src ="../../assets/icon/Attachment.png"></ion-img>
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <!-- View -->
+  <ion-grid class="top-curve" *ngIf="selectTabs == 'view'">
+    <ion-row class="content-row">
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Date</p>
+          <p class="ion-text-center content_text"><ion-img class="cust_icon" src="../../assets/icon/Calender.png"></ion-img> Mar 13</p>
+        </div>
+      </ion-col>
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Start Time</p>
+          <p class="ion-text-center content_text"><ion-img class="cust_icon" src="../../assets/icon/Clock.png"></ion-img> 3:00PM</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div >
+          <p class="title text_upper">End Time</p>
+          <p class="ion-text-center content_text"><ion-img class="cust_icon" src="../../assets/icon/Clock.png"></ion-img> 4:00PM</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-center location-row">
+      <ion-col size="9">
+        <p class="location_text"><ion-icon name="location-outline"></ion-icon>Location: Meeting Hall1 454</p>
+      </ion-col>      
+      <!-- <ion-col size="3" class="display-flex ion-justify-content-end">
+        <div class="status ongoing">
+          Ongoing <ion-label></ion-label>
+        </div>
+      </ion-col> -->
+    </ion-row>
+
+    <ion-row class="intiated-row">
+      <ion-col size="12">
+        <ion-text>
+          <p class="initiated-text view_title">Initiated By</p>
+        </ion-text>
+      </ion-col>
+      <ion-col size="12">
+        <div class="initiated-profile display-flex align-item-center">
+          <ion-img class="profile-img" src="../../assets/profile.jpg"></ion-img>
+          <ion-label>Amanda Wallace</ion-label>
+        </div>
+      </ion-col>
+
+ 
+    </ion-row>
+
+    <ion-row class="attendees-row">
+      <ion-col size="6">
+        <ion-text>
+          <p class="initiated-text view_title">Attendees</p>
+        </ion-text> 
+        <div class="attendees-profile display-flex align-item-center">
+          <div class="attendees-list ion-justify-content-end">
+            <ion-img  src="../../assets/profile/profile1.png"></ion-img>
+            <ion-img  src="../../assets/profile/profile2.png"></ion-img>
+            <ion-img  src="../../assets/profile/profile3.png"></ion-img>
+            <p class="more">+</p>
+          </div>
+        </div>
+      </ion-col>
+      <ion-col size="6" class="display-flex ion-justify-content-end">
+        <div class="status ongoing">
+          Ongoing <ion-label></ion-label>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row class="attendees-row">
+      <ion-col size="12">
+        <ion-text>
+          <p class="initiated-text view_title">Attendees</p>
+        </ion-text> 
+      </ion-col>
+      <ion-col size="12">
+        <div class="attendees-profile display-flex align-item-center">
+          <ion-img class="profile-img" src="../../assets/profile.jpg"></ion-img>
+          <ion-label>Luisa Lee</ion-label>
+        </div>
+        
+        <div class="attendees-profile display-flex align-item-center">
+          <ion-img class="profile-img" src="../../assets/profile/profile1.png"></ion-img>
+          <ion-label>Roger Collins</ion-label>
+        </div>
+        
+        <div class="attendees-profile display-flex align-item-center">
+          <ion-img class="profile-img" src="../../assets/profile/profile2.png"></ion-img>
+          <ion-label>Amanda Wagner</ion-label>
+        </div>
+        
+        <div class="attendees-profile display-flex align-item-center">
+          <ion-img class="profile-img" src="../../assets/profile/profile1.png"></ion-img>
+          <ion-label>Tyler Watkins</ion-label>
+        </div>
+        
+        <div class="attendees-profile display-flex align-item-center">
+          <ion-img class="profile-img" src="../../assets/profile/profile2.png"></ion-img>
+          <ion-label>Laurel Hill</ion-label>
+        </div>
+        
+        <div class="attendees-profile display-flex align-item-center">
+          <ion-img class="profile-img" src="../../assets/profile/profile3.png"></ion-img>
+          <ion-label>Carol McDonald</ion-label>
+        </div>
+      </ion-col>
+    </ion-row> -->
+
+  </ion-grid>
+  <!-- view end  -->
+
+  <!-- notes -->
+  <ion-grid class="top-curve notes_tab " *ngIf="selectTabs == 'notes'">
+    <ion-card>
+      <ion-buttons class="action_btns" >
+        <ion-button  >
+          <ion-icon   src="../../assets/icon/Edit.svg" color="light" size="small"></ion-icon>        
+        </ion-button>
+        <ion-button >
+          <ion-icon  src="../../assets/icon/Delete.svg" color="light" size="small"></ion-icon>        
+        </ion-button>
+      </ion-buttons>
+      <ion-item  lines="none" >
+        <ion-textarea class="cust_input"></ion-textarea>
+      </ion-item>
+<!-- 
+    <ion-item  lines="none">
+      <ion-select class="attendees-select" value="brown" okText="Ok" cancelText="Cancel" multiple selected-text="Attendees"      >
+        <ion-select-option value="Luisa Lee">Luisa Lee</ion-select-option>
+        <ion-select-option value="Roger Collins">Roger Collins</ion-select-option>
+        <ion-select-option value="Amanda Wagner">Amanda Wagner</ion-select-option>
+        <ion-select-option value="Laurel Hill">Laurel Hill</ion-select-option>
+      </ion-select>
+    </ion-item> -->
+    </ion-card>
+
+    <ion-card>
+      <ion-buttons class="action_btns" >
+        <ion-button  >
+          <ion-icon   src="../../assets/icon/Edit.svg" color="light" size="small"></ion-icon>        
+        </ion-button>
+        <ion-button >
+          <ion-icon  src="../../assets/icon/Delete.svg" color="light" size="small"></ion-icon>        
+        </ion-button>
+      </ion-buttons>
+      <ion-item  lines="none" >
+        <ion-textarea class="cust_input"></ion-textarea>
+      </ion-item>
+
+    </ion-card>
+  </ion-grid>
+  <!-- notes end  -->
+
+  <!-- Action -->
+  <ion-grid class="top-curve action_tab " *ngIf="selectTabs == 'action'"> 
+    <ion-card>
+      <ion-buttons class="action_btns" >
+        <ion-button  >
+          <ion-icon   src="../../assets/icon/Edit.svg" color="light" size="small"></ion-icon>        
+        </ion-button>
+        <ion-button >
+          <ion-icon  src="../../assets/icon/Delete.svg" color="light" size="small"></ion-icon>        
+        </ion-button>
+      </ion-buttons>
+      <ion-item  lines="none" >
+        <ion-textarea class="cust_input"></ion-textarea>
+      </ion-item>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="6">
+          <ion-item lines="none">
+            <div class="attendees-profile display-flex align-item-center">
+              <div class="attendees-list ion-justify-content-end">
+                <ion-img  src="../../assets/profile/profile1.png"></ion-img>
+                <ion-img  src="../../assets/profile/profile2.png"></ion-img>
+                <ion-img  src="../../assets/profile/profile3.png"></ion-img>
+                <p class="more">+</p>
+              </div>
+            </div>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size="6" class="ion-text-right">
+          <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" ></ion-datetime>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+
+    <ion-card>
+      <ion-buttons class="action_btns" >
+        <ion-button  >
+          <ion-icon   src="../../assets/icon/Edit.svg" color="light" size="small"></ion-icon>        
+        </ion-button>
+        <ion-button >
+          <ion-icon  src="../../assets/icon/Delete.svg" color="light" size="small"></ion-icon>        
+        </ion-button>
+      </ion-buttons>
+      <ion-item  lines="none" >
+        <ion-textarea class="cust_input"></ion-textarea>
+      </ion-item>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="6">
+          <ion-item lines="none">
+            <div class="attendees-profile display-flex align-item-center">
+              <div class="attendees-list ion-justify-content-end">
+                <ion-img  src="../../assets/profile/profile1.png"></ion-img>
+                <ion-img  src="../../assets/profile/profile2.png"></ion-img>
+                <ion-img  src="../../assets/profile/profile3.png"></ion-img>
+                <p class="more">+</p>
+              </div>
+            </div>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size="6" class="ion-text-right">
+          <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" ></ion-datetime>
+        </ion-col>
+      </ion-row>
+
+    </ion-card>
+  </ion-grid>
+  <!-- action end  -->
+
+  <!-- Attachment -->
+  <ion-grid class="top-curve attchment_tab " *ngIf="selectTabs == 'attachment'"> 
+    <ion-item lines="none">
+      <ion-input type="file" id="file-input" ></ion-input>
+      <ion-button class="upload_btn">Upload</ion-button>
+    </ion-item>
+
+    <ion-row class="format_row">
+      <ion-col size="3">
+        <div class="format_box">.pdf</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="format_box">.docs</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="format_box">.jpg</div>
+      </ion-col>
+      <ion-col size="3">
+        <div class="format_box">.txt</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- Attchment end  -->
+  
+</ion-content>
+
+<ion-footer class="ion-no-border" translucent>
+  <ion-row >
+    <ion-col size="4" class="ion-no-padding bg_theme">
+      <ion-button expand="block" class="profile bg_theme">
+        <ion-icon name="person-outline" size="small" ></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme_green">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme">
+      <ion-button class="notification bg_theme">
+        <ion-icon name="settings-outline" size="small" ></ion-icon>
+      </ion-button>
+    </ion-col>
+    <!-- <ion-col  size="3" class="ion-no-padding">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col> -->
+  </ion-row>
+</ion-footer>

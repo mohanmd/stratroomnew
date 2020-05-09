@@ -1,0 +1,130 @@
+ion-header{
+    background-color: #1e252d;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin-bottom: 5em;
+    ion-toolbar{
+        --background: #1e252d;
+        color: #fff;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        ion-title{
+            font-size: 16px;
+        }
+    }
+
+    ion-buttons{
+        margin-right: 15px;
+    }
+}
+
+// common
+.text_upper{
+    text-transform: uppercase;
+}
+.plus-icon{
+    font-size: 13px;
+}
+.btn-edit{
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+// header bottom
+.header-bottom{
+    height: 38px;
+    img{
+        border-radius: 100px;
+        border: 2px solid #fff;
+        /* padding: 4px; */
+        box-shadow: 0px 0px 8px 0px 0px 0px 8px 0px rgba(0, 0, 0, 0.54);
+        display: block;
+        width: 100;
+        margin: auto;
+    }
+    h6{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 7px 0 0;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+.progress_bar{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+ion-progress-bar{
+    margin-right: 8px;
+    height: 8px;
+    border-radius: 5px;
+}
+.border_red{
+    border-color: #af0f0f;
+    ion-progress-bar{
+        --progress-background: #af0f0f;
+    }
+}
+.border_green{
+    border-color:  #0b9e30;
+    ion-progress-bar{
+        --progress-background: #0b9e30;
+    }
+}
+.border_yellow{
+    border-color:  #ecf111;
+    ion-progress-bar{
+        --progress-background: #ecf111;
+    }
+}
+ion-card{
+    box-shadow: 0px 0px 7px -4px;
+    border-left: 5px solid;
+    border-radius: 9px;
+    margin-top: 16px;
+    ion-row{
+        padding: 0 10px;
+    }
+    
+    ion-card-content{
+        .due_date{
+            text-align: right;
+        }
+        ion-col{
+            ion-label{
+                display: block;
+                font-weight: 600;
+                color: #000;
+            }
+            ion-text{
+                color: rgb(95, 95, 95);
+            }
+        }
+    }
+}
+
+.bg_theme{
+    --background: #1e252d;
+}
+.bg_theme_green{
+    --background: #9bbf54;
+}
+
+ion-footer{
+    box-shadow: 0px 0px 7px 0px #000;
+    ion-button{
+        width: 100%;
+        margin: 0;
+        --border-radius: 0;
+        --box-shadow: none;
+        ion-icon{
+            margin-right: 5px;
+            padding: 10px;
+        }
+    }
+}
+
+

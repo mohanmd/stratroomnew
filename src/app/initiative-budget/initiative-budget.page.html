@@ -1,0 +1,156 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="chevron-back-outline" size="md"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+     
+      <ion-button (click)="goLogin()">
+        <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center text_upper">Initiatives budget</ion-title>
+  </ion-toolbar> 
+  <ion-row class="header-bottom">
+    <img src="../../assets/profile.svg">
+    <h6 class="text_upper">Human Resource</h6>
+  </ion-row> 
+</ion-header>
+
+<ion-content>
+  <!-- <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-tab-button tab="budget">
+        <ion-icon src="../../assets/icon/initiative/budget.svg" siz="small"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="speakers">
+        <ion-icon src="../../assets/icon/initiative/Activity.svg" siz="small"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="chart">
+        <ion-icon src="../../assets/icon/initiative/Charts.svg" siz="small"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="comments">
+        <ion-icon src="../../assets/icon/initiative/Comments.svg" siz="small"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="milestone">
+        <ion-icon src="../../assets/icon/initiative/Milestone.svg" siz="small"></ion-icon>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="subinitiative">
+        <ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" siz="small"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs> -->
+
+  <ion-grid>
+    <ion-row class="tab-icon">
+      <ion-col>
+        <ion-icon src="../../assets/icon/initiative/budget.svg" siz="md"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon src="../../assets/icon/initiative/Activity.svg" siz="md"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon src="../../assets/icon/initiative/Charts.svg" siz="md"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon src="../../assets/icon/initiative/Comments.svg" siz="md"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon src="../../assets/icon/initiative/Milestone.svg" siz="md"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon src="../../assets/icon/initiative/Sub-Initiative.svg" siz="md"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-grid class="top-curve">
+    <ion-row class="content-row">
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Total</p>
+          <p class="ion-text-center content_text">$5000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Utilized</p>
+          <p class="ion-text-center content_text">$20,000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div >
+          <p class="title text_upper">Balance</p>
+          <p class="ion-text-center content_text">$30,000</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="content-row">
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Actual</p>
+          <p class="ion-text-center content_text">$50,000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4" >
+        <div class="border_right">
+          <p class="title text_upper">Target</p>
+          <p class="ion-text-center content_text">$20,000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div >
+          <p class="title text_upper">Budget</p>
+          <p class="ion-text-center content_text">$20,000</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="content-row border_bottom">
+      <ion-col size="4" >
+      </ion-col>
+      <ion-col size="4" >
+        <div >
+          <p class="title text_upper">Forecast</p>
+          <p class="ion-text-center content_text">$20,000</p>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+
+<ion-footer class="ion-no-border" translucent>
+  <ion-row >
+    <ion-col size="4" class="ion-no-padding bg_theme">
+      <ion-button expand="block" class="profile bg_theme">
+        <ion-icon name="person-outline" size="small" ></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme_green">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme">
+      <ion-button class="notification bg_theme">
+        <ion-icon name="settings-outline" size="small" ></ion-icon>
+      </ion-button>
+    </ion-col>
+    <!-- <ion-col  size="3" class="ion-no-padding">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col> -->
+  </ion-row>
+</ion-footer>
