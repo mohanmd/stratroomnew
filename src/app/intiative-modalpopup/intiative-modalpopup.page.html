@@ -6,6 +6,26 @@
       </ion-buttons>
   </ion-toolbar>
 </ion-header>
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="presentModal()">
+        <ion-icon class="plus-icon" src="assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button (click)="goLogin1()">
+        <ion-icon  src="assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center text_upper">My Initiative</ion-title>
+  </ion-toolbar> 
+  <ion-row class="header-bottom">
+    <img src="assets/profile.svg">
+    <h6 class="text_upper">Human Resource</h6>
+  </ion-row> 
+</ion-header>
 
 <ion-content class="ion-padding">
   <ion-row >

@@ -15,13 +15,12 @@ import { IntiativeModalpopupPage } from '../intiative-modalpopup/intiative-modal
     CommonModule,
     FormsModule,
     IonicModule,
-    InitiativesPageRoutingModule,
-    IntiativeModalpopupPage
+    InitiativesPageRoutingModule
   ],
   declarations: [
     InitiativesPage, 
     IntiativeModalpopupPage
   ],
-  entryComponents: [ IntiativeModalpopupPage ]
+  entryComponents: [ IntiativeModalpopupPage ],
 })
 export class InitiativesPageModule {}
