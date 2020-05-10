@@ -20,6 +20,9 @@ ion-header{
             --padding-start: 0;
             --padding-end: 0;
         }
+        .plus-icon{
+            font-size: 15px;
+        }
     }
 }
 
@@ -105,7 +108,6 @@ ion-content{
     }
     
     .attendees-profile {
-        margin-bottom: 20px;
         .profile-img{
             width: 40px;
             height: 40px;
@@ -199,14 +201,23 @@ ion-content{
             border-radius: 4px;
         }
 
-        ion-datetime{
-            padding-right: 18px;
-            color: #000;
-            font-weight: 600;
+        // datepicker
+        .date_col {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            ion-img{
+                width: 20px;
+            }
+            ion-datetime{
+                padding-right: 8px;
+                color: #000;
+                font-weight: 600;
+            }
         }
 
         ion-card{
-            padding: 10px 3px;
+            padding: 10px 3px 0;
             box-shadow: 0px 0px 9px 1px #efefef;
             border-radius: 11px;
             // border-bottom: 2px solid #9bbf54;

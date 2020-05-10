@@ -4,8 +4,11 @@
       <ion-back-button defaultHref="login"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="secondary">
-      <ion-button class="edit-btn" (click)="editpopup()">
+      <ion-button class="edit-btn" (click)="editpopup()" *ngIf="selectTabs == 'view'">
         <ion-icon class="edit-icon" src="assets/icon/Edit.svg"  color="light" ></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="selectTabs == 'action' || selectTabs == 'notes'" (click)="editpopup()">
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg"></ion-icon>
       </ion-button>
       <ion-button (click)="goLogin()">
         <ion-icon  src="assets/icon/initiative/Logout.svg" color="dark" size="small"></ion-icon>        
@@ -20,6 +23,7 @@
 </ion-header>
 
 <ion-content>
+  
   <ion-segment   [(ngModel)]="selectTabs">
     <ion-segment-button value="view" >
       <ion-img src ="assets/icon/eye.png"></ion-img>
@@ -214,8 +218,9 @@
           </ion-item>
         </ion-col>
 
-        <ion-col size="6" class="ion-text-right">
+        <ion-col size="6" class="ion-text-right date_col">
           <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" ></ion-datetime>
+          <ion-img src="../../assets/icon/Calender.png"></ion-img>
         </ion-col>
       </ion-row>
     </ion-card>
@@ -246,8 +251,9 @@
           </ion-item>
         </ion-col>
 
-        <ion-col size="6" class="ion-text-right">
+        <ion-col size="6" class="ion-text-right date_col">
           <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" ></ion-datetime>
+          <ion-img src="../../assets/icon/Calender.png"></ion-img>
         </ion-col>
       </ion-row>
 
