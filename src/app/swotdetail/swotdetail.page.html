@@ -1,0 +1,113 @@
+<ion-header class="ion-no-border font">
+  <ion-toolbar class="heading_top">
+    <!-- <ion-buttons slot="start" (click)="goLogin()">
+        <ion-icon class="back-outline" name="chevron-back-outline" ></ion-icon>
+    </ion-buttons> -->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="secondary"  >
+      <ion-button *ngIf="selectTabs == 'sub_initiative'" (click)="presentModal('plus')">
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button  *ngIf="selectTabs == 'milestone'" (click)="milestoneModal('plusmiles')">
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="selectTabs == 'activity'"  (click)="activityModal('plusactivity')" >
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="selectTabs == 'view'" >
+        <ion-icon src="../../assets/icon/edit-icon.svg" color="light" size="small" ></ion-icon>
+      </ion-button>
+      <ion-button *ngIf="selectTabs == 'budget'"  (click)="editBudget('editbudget')">
+        <ion-icon src="../../assets/icon/Edit.svg" color="light" size="small"></ion-icon>
+      </ion-button>
+     
+      <ion-button (click)="goLogin()">
+        <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
+      </ion-button>
+    </ion-buttons>
+    <ion-title *ngIf="selectTabs == 'view'"  class="ion-text-center text_upper ion-align-items-center font-weight">Strength</ion-title>
+    <ion-title *ngIf="selectTabs == 'plus'"  class="ion-text-center text_upper font-weight">Add</ion-title>
+    <ion-title *ngIf="selectTabs == 'attachment'"  class="ion-text-center text_upper font-weight">Attachment</ion-title>
+  </ion-toolbar>
+  <ion-row class="header-bottom">
+    <img src="../../assets/profile.svg" class="img_top">
+    <h6 class="text_upper">Human Resource</h6>
+  </ion-row> 
+</ion-header>
+
+<ion-content>
+  <ion-segment   [(ngModel)]="selectTabs" class="font">
+    <ion-segment-button value="view" >
+      <ion-icon class="view-icon" src="../../assets/icon/initiative/eye-outline .svg" siz="small"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="add" >
+      <ion-icon src="../../assets/icon/initiative/plus-dark.svg" siz="small"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="attachment" >
+      <ion-icon src="../../assets/icon/initiative/attachment.svg" siz="small"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  
+  <!-- view -->
+  <ion-grid class="top-curve font" *ngIf="selectTabs == 'view'">
+    <ion-row>
+      <ion-col size="12" class="status_col ion-text-right">
+        <ion-label class="font-as_heding text_upper">Status</ion-label>
+        <ion-icon class="status_icon" name="flag-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="12" >
+        <p class="marg-0 font-as_heding margin-bot-10 text_upper">Strength</p>
+        <p class="marg-0 margin-bot-15">Aliguam in bibendum mmauris. Sed erat vel velit blandit pharetra vitae nec ante</p>
+        <p class="marg-0 text_upper margin-bot-15"><span class="font-weight font-as_heding ">Type: </span> External</p>
+      </ion-col>
+      <ion-col size="12">
+        <p class="marg-0 font-as_heding margin-bot-10 text_upper">Impact</p>
+        <p class="marg-0 margin-bot-15">Aliguam in bibendum mmauris. Sed erat vel velit blandit pharetra vitae nec ante</p>
+      </ion-col>
+      <ion-col size="12" class="col_width-fit">
+        <p class="font-as_heding text_upper marg-0">Responsible</p>
+        <div class="responsible_profile">
+          <ion-img src="assets/profile/profile1.png"></ion-img>
+          <ion-img src="assets/profile/profile1.png"></ion-img>
+          <ion-img src="assets/profile/profile1.png"></ion-img>
+          <span>3+</span>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!-- view end  -->
+
+
+
+
+  
+</ion-content>
+
+<ion-footer class="ion-no-border" translucent>
+  <ion-row >
+    <ion-col size="4" class="ion-no-padding bg_theme">
+      <ion-button expand="block" class="profile bg_theme">
+        <ion-icon name="person-outline" size="small" ></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme_green">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme">
+      <ion-button class="notification bg_theme">
+        <ion-icon name="settings-outline" size="small" ></ion-icon>
+      </ion-button>
+    </ion-col>
+    <!-- <ion-col  size="3" class="ion-no-padding">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col> -->
+  </ion-row>
+</ion-footer>

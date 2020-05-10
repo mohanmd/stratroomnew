@@ -68,6 +68,10 @@ const routes: Routes = [
     path: 'swot',
     loadChildren: () => import('./swot/swot.module').then( m => m.SwotPageModule)
   },
+  {
+    path: 'swotdetail',
+    loadChildren: () => import('./swotdetail/swotdetail.module').then( m => m.SwotdetailPageModule)
+  },
 
 ];
 

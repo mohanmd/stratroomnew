@@ -8,18 +8,61 @@ ion-content{
         }
     }
 
+    // segment tab
+    ion-segment{
+        ion-segment-button{
+            --padding-start: 0;
+            --padding-end: 0;
+            min-width: 47px;
+            width: 47px;
+            max-width: 40px;
+             color: #fff; 
+            margin-right: 10px;
+            border-radius: 6px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            --indicator-height: 0;
+            font-weight: 700;
+        }
+        ion-segment-button p{
+            border-radius: 4px;
+            margin: 0;
+            width: 42px;
+            padding: 12px;
+        }
+        
+        ion-segment-button.ios.segment-button-checked {
+            color: #000;
+        }
+        ion-segment-button.segment-button-checked p{
+            border: 1px solid #fff;
+        }
+        ion-segment-button.button_green{
+            background: #54af87;
+        }
+        ion-segment-button.button_orange{
+            background: #f0b03c;
+        }
+        ion-segment-button.button_blue{
+            background: #58b5b9;
+        }
+        ion-segment-button.button_red{
+            background: #df4e4b;
+        }
+    }
+
     ion-card{
         box-shadow: 0px 0px 0px;
         border-radius: 10px;
-    }
-    .marg-0{
-        margin: 0;
+        margin-bottom: 20px;
     }
 
     // title
     .card_title{
         margin: 0;
     }
+
 
     .color_box{
         height: 42px;
@@ -31,12 +74,13 @@ ion-content{
         align-items: center;
         justify-content: center;
         font-size: 20px;
-        font-weight: 800;
+        font-weight: 600;
     }
 
     .inner_row{
         width: 100%;
         padding: 0 15px;
+        padding-bottom: 10px;
         .content{
             padding-top: 5px;
         }
