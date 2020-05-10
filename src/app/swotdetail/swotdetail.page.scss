@@ -84,15 +84,22 @@ ion-content{
         justify-content: center;
     }
     ion-segment-button {
-        width: 47px;
-        max-width: 45px;
-        min-width: 43px;
-        display: flex;
-        align-items: center;
-        //min-width: 53px;
-        --color-checked: transparent;
-        --color-focused: transparent;
-        --indicator-color: #707070;
+--padding-start: 0;
+    --padding-end: 0;
+    min-width: 32px;
+    width: 43px;
+    max-width: 36px;
+    height: 40px;
+    min-height: 36px;
+    max-height: 36px;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    --indicator-height: 0;
+    font-weight: 700;
     }
 
     ion-segment-button ion-icon{

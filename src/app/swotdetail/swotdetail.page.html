@@ -18,10 +18,10 @@
         <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg" ></ion-icon>
       </ion-button>
       <ion-button *ngIf="selectTabs == 'view'" >
-        <ion-icon src="../../assets/icon/edit-icon.svg" color="light" size="small" ></ion-icon>
+        <ion-icon src="../../assets/icon/Edit.svg" color="light" size="small" class="icon-edit">></ion-icon>
       </ion-button>
       <ion-button *ngIf="selectTabs == 'budget'"  (click)="editBudget('editbudget')">
-        <ion-icon src="../../assets/icon/Edit.svg" color="light" size="small"></ion-icon>
+        <ion-icon src="../../assets/icon/Edit.svg" color="light" size="small" class="icon-edit"></ion-icon>
       </ion-button>
      
       <ion-button (click)="goLogin()">

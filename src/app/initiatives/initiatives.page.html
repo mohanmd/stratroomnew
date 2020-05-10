@@ -15,7 +15,7 @@
         <ion-icon  src="../../assets/icon/initiative/Logout.svg" color="light" size="small"></ion-icon>        
       </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-center text_upper font font-weight">My Initiatives</ion-title>
+    <ion-title class="ion-text-center text_upper font font-weight">My Initiative</ion-title>
   </ion-toolbar> 
   <ion-row class="header-bottom">
     <img src="../../assets/profile.svg" class="img_top">
@@ -28,7 +28,7 @@
   <ion-card class="border_yellow font" >
     <ion-card-header  class="ion-no-padding">
       <ion-row>
-        <ion-col size="10">
+        <ion-col size="9">
       <ion-item lines="none">
         <ion-avatar slot="start" >
           <ion-img src="../../assets/profile.jpg"  (click)="goDetail()"></ion-img>
@@ -38,7 +38,7 @@
 
       </ion-item>
         </ion-col>
-        <ion-col size="2">
+        <ion-col size="3" class="ion-text-right">
         <ion-icon class="edit ion-text-right" (click)="editModal('edit')" src="../../assets/icon/Edit.svg" color="dark" ></ion-icon>
         <ion-icon  class="edit ion-text-right" src="../../assets/icon/Delete.svg" color="dark" ></ion-icon>
         </ion-col>
@@ -64,7 +64,7 @@
   <ion-card class="border_green font" (click)="goDetail()">
     <ion-card-header  class="ion-no-padding">
       <ion-row>
-        <ion-col size="10">
+        <ion-col size="9">
       <ion-item lines="none">
         <ion-avatar slot="start">
           <ion-img src="../../assets/profile.jpg"></ion-img>
@@ -72,7 +72,7 @@
         <p class="font">Increase the influence of customer's views</p>
       </ion-item>
         </ion-col>
-        <ion-col size="2">
+        <ion-col size="3"  class="ion-text-right">
         <ion-icon class="edit ion-text-right" src="../../assets/icon/Edit.svg" color="dark" size="md"></ion-icon>
         <ion-icon class="edit ion-text-right" src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon>
         </ion-col>
@@ -97,7 +97,7 @@
   <ion-card class="border_red font" (click)="goDetail()">
     <ion-card-header  class="ion-no-padding">
       <ion-row>
-        <ion-col size="10">
+        <ion-col size="9">
       <ion-item lines="none">
         <ion-avatar slot="start">
           <ion-img src="../../assets/profile.jpg"></ion-img>
@@ -105,7 +105,7 @@
         <p class="font">Increase the influence of customer's views</p>
       </ion-item>
         </ion-col>
-        <ion-col size="2">
+        <ion-col size="3"  class="ion-text-right">
         <ion-icon class="edit" src="../../assets/icon/Edit.svg" color="dark" size="md" (click)="editModal('edit')"></ion-icon>
         <ion-icon class="edit" src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon>
         </ion-col>
@@ -130,7 +130,7 @@
   <ion-card class="border_green font" (click)="goDetail()">
     <ion-card-header  class="ion-no-padding">
       <ion-row>
-        <ion-col size="10">
+        <ion-col size="9">
           <ion-item lines="none">
             <ion-avatar slot="start">
               <ion-img src="../../assets/profile.jpg"></ion-img>
@@ -138,7 +138,7 @@
             <p class="font">Increase the influence of customer's views</p>
           </ion-item>
         </ion-col>
-        <ion-col size="2">
+        <ion-col size="3"  class="ion-text-right">
           <ion-icon class="edit" src="../../assets/icon/Edit.svg" color="dark" size="md" (click)="editModal('edit')"></ion-icon>
           <ion-icon class="edit" src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon>
         </ion-col>
@@ -162,7 +162,7 @@
   <ion-card class="border_yellow font" (click)="goDetail()">
     <ion-card-header  class="ion-no-padding">
       <ion-row>
-        <ion-col size="10">
+        <ion-col size="9">
           <ion-item lines="none">
             <ion-avatar slot="start">
               <ion-img src="../../assets/profile.jpg"></ion-img>
@@ -170,7 +170,7 @@
             <p class="font">Increase the influence of customer's views</p>
           </ion-item>
         </ion-col>
-        <ion-col size="2">
+        <ion-col size="3"  class="ion-text-center">
           <ion-icon class="edit" src="../../assets/icon/Edit.svg" color="dark" size="md" (click)="editModal('edit')"></ion-icon>
           <ion-icon class="edit" src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon>
         </ion-col>
@@ -194,7 +194,7 @@
     <ion-card class="border_yellow font" (click)="goDetail()">
       <ion-card-header  class="ion-no-padding">
         <ion-row>
-          <ion-col size="10">
+          <ion-col size="9">
             <ion-item lines="none">
               <ion-avatar slot="start">
                 <ion-img src="../../assets/profile.jpg"></ion-img>
@@ -202,7 +202,7 @@
               <p class="font">Increase the influence of customer's views</p>
             </ion-item>
           </ion-col>
-          <ion-col size="2">
+          <ion-col size="3"  class="ion-text-right">
             <ion-icon class="edit" src="../../assets/icon/Edit.svg" color="dark" size="md" (click)="editModal('edit')"></ion-icon>
             <ion-icon class="edit" src="../../assets/icon/Delete.svg" color="dark" size="md"></ion-icon>
           </ion-col>
@@ -245,11 +245,6 @@
         <ion-icon name="settings-outline" size="small" ></ion-icon>
       </ion-button>
     </ion-col>
-    <!-- <ion-col  size="3" class="ion-no-padding">
-      <ion-button class="notification bg_theme_green">
-        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
-      </ion-button>
-    </ion-col> -->
   </ion-row>
 </ion-footer>
 

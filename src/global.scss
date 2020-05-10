@@ -47,6 +47,11 @@ app-meeting, app-meetingsview, app-swot{
   color: #1e252d;
   font-weight: 600;
 }
+
+.cust-dark{
+  color: #1e252d;
+}
+
 .marg-0{
   margin: 0;
 }
@@ -56,9 +61,18 @@ app-meeting, app-meetingsview, app-swot{
 .margin-bot-15{
   margin-bottom: 15px;
 }
+
+.padding-start-end-remove{
+  --padding-start: 0;
+  --padding-end: 0;
+}
 // actionicon
 .ion-cust-size{
   font-size: 14px;
+}
+.icon-edit{
+  filter: invert(1) brightness(3);
+
 }
 
 // header action buttons

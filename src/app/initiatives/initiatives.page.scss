@@ -115,6 +115,11 @@ ion-card{
             }
         }
     }
+
+
+    ion-item{
+        --padding-start: 0;
+    }
 }
 
 .bg_theme{
@@ -141,8 +146,9 @@ ion-footer{
 ion-content{
     ion-card{
         .edit{
-            margin-top: -40px;
+            margin-top: 5px;
             margin-left: 5px;
+            font-size: 20px;
         }
     }
 }
