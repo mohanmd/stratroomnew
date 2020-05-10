@@ -12,4 +12,5 @@ export class SwotPage implements OnInit {
   ngOnInit() {
   }
 
+  selectTabs = 'swot';
 }

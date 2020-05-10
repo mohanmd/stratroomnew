@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border">
+<ion-header class="ion-no-border cust_header">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="login"></ion-back-button>
@@ -36,18 +36,50 @@
     </ion-segment-button>
   </ion-segment>
   
-  <ion-grid>
+  <ion-grid *ngIf="selectTabs == 'swot'">
     <ion-card>
-      <ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col size="2" class="color_box">
+          <ion-label>
+            S
+          </ion-label>
+        </ion-col>
+        <ion-col size="8" class="ion-text-center">
+          <p class="text_upper card_title "><span class="font-weight">Type: </span>External</p>
+        </ion-col>
         <ion-col size="2">
+          <ion-buttons class="action_btns">
+            <ion-button  >
+              <ion-icon  class="btn-edit" src="assets/icon/Edit.svg" color="light" size="small"></ion-icon>        
+            </ion-button>
+            <ion-button >
+              <ion-icon  src="assets/icon/Delete.svg" color="light" size="small"></ion-icon>        
+            </ion-button>
+          </ion-buttons>
+        </ion-col>
 
-        </ion-col>
-        <ion-col size="2" class="ion-text-center">
-          <p class="text_upper"><span class="font-weight">Type: </span>External</p>
-        </ion-col>
-        <ion-col size="2">
+        <ion-row class="inner_row">
+          <ion-col size="12">
+            <p class="marg-0 content">Aliguam in bibendum mmauris. Sed erat vel velit blandit pharetra vitae nec ante</p>
+          </ion-col>
+          <ion-col size="12">
+            <p ><span class="font-weight font-as_heding text_upper">Impact:</span>Aliguam in bibendum mmauris</p>
+          </ion-col>
 
-        </ion-col>
+          <ion-col size="6" class="col_width-fit">
+            <p class="font-as_heding text_upper marg-0">Responsible</p>
+            <div class="responsible_profile">
+              <ion-img src="assets/profile/profile1.png"></ion-img>
+              <ion-img src="assets/profile/profile1.png"></ion-img>
+              <ion-img src="assets/profile/profile1.png"></ion-img>
+              <span>3+</span>
+            </div>
+          </ion-col>
+          <ion-col size="6"  class="col_width-fit ion-text-center status_col">
+            <p class="font-as_heding text_upper marg-0">Status</p>
+            <ion-icon class="status_icon" name="flag-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
       </ion-row>
     </ion-card>
   </ion-grid>

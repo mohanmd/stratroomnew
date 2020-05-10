@@ -34,7 +34,11 @@
   font-weight: bold;
 }
 
-app-meeting, app-meetingsview{
+.text_upper{
+  text-transform: uppercase;
+}
+
+app-meeting, app-meetingsview, app-swot{
   background: #f9f9f9;
 }
 
@@ -79,7 +83,7 @@ ion-header {
 
 
 // header
-ion-header{
+ion-header.cust_header{
   background-color: #1e252d;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
@@ -96,6 +100,10 @@ ion-header{
 
   ion-buttons{
       margin-right: 15px;
+  }
+
+  .plus-icon{
+    font-size: 13px;
   }
 }
 // header bottom
@@ -117,5 +125,29 @@ ion-header{
       margin: 7px 0 0;
       font-size: 15px;
       font-weight: 600;
+  }
+}
+
+
+
+// footer
+.bg_theme{
+  --background: #1e252d;
+}
+.bg_theme_green{
+  --background: #9bbf54;
+}
+
+ion-footer{
+  box-shadow: 0px 0px 7px 0px #000;
+  ion-button{
+      width: 100%;
+      margin: 0;
+      --border-radius: 0;
+      --box-shadow: none;
+      ion-icon{
+          margin-right: 5px;
+          padding: 10px;
+      }
   }
 }
