@@ -217,7 +217,7 @@ ion-content{
         }
 
         ion-card{
-            padding: 10px 3px 0;
+            padding: 10px 3px ;
             box-shadow: 0px 0px 9px 1px #efefef;
             border-radius: 11px;
             // border-bottom: 2px solid #9bbf54;
@@ -227,6 +227,12 @@ ion-content{
                 position: relative;
                 padding-right: 1px;
             }
+        }
+    }
+
+    .action_tab{
+        ion-card{
+            padding-bottom: 0px;
         }
     }
     
