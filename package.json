@@ -30,6 +30,7 @@
     "cordova-plugin-datepicker": "^0.9.3",
     "cordova-plugin-fullscreen": "^1.2.0",
     "core-js": "^2.5.4",
+    "ion2-calendar": "^3.0.0-rc.0",
     "ionic-calendar-date-picker": "^0.1.2",
     "moment": "^2.25.3",
     "rxjs": "~6.5.1",

@@ -49,6 +49,10 @@ const routes: Routes = [
   {
     path: 'meetingeditpopup',
     loadChildren: () => import('./meetingeditpopup/meetingeditpopup.module').then( m => m.MeetingeditpopupPageModule)
+  },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./calendar/calendar.module').then( m => m.CalendarPageModule)
   }
 
 
