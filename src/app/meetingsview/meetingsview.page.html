@@ -14,7 +14,7 @@
         <ion-icon  src="assets/icon/initiative/Logout.svg" color="dark" size="small"></ion-icon>        
       </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-center text_upper">Sales Meeting</ion-title>
+    <ion-title class="ion-text-center text_upper">My Meetings Detail</ion-title>
   </ion-toolbar> 
   <ion-row class="header-bottom">
     <img src="assets/profile.svg">
@@ -43,6 +43,9 @@
   <!-- View -->
   <ion-grid class="top-curve" *ngIf="selectTabs == 'view'">
     <ion-row class="content-row">
+      <ion-col size="12">
+        <p class="main_title text_upper">Sales Meeting</p>
+      </ion-col>
       <ion-col size="4" >
         <div class="border_right">
           <p class="title text_upper">Date</p>
@@ -64,10 +67,10 @@
     </ion-row>
 
     <ion-row class="ion-align-items-center location-row">
-      <ion-col size="9">
+      <ion-col size="12">
         <p class="location_text"><ion-icon name="location-outline"></ion-icon>Location: Meeting Hall1 454</p>
       </ion-col>      
-      <ion-col size="3" class="display-flex ion-justify-content-end">
+      <ion-col size="3" class="display-flex ion-justify-content-start">
         <div class="status ongoing">
           Ongoing <ion-label></ion-label>
         </div>

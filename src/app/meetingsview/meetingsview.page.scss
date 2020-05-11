@@ -162,9 +162,17 @@ ion-content{
     .title {
         font-size: 4vw;
         margin-bottom: 5px;
+        margin-top: 0;
         text-align: center;
         font-weight: 600;
         color: #1e252d;
+    }
+    .main_title{
+        font-weight: 600;
+        color: #000;
+        margin: 0;
+        font-size: 15px;
+        margin-top: 10px;
     }
     .content-row{
         .cust_icon{
@@ -172,7 +180,7 @@ ion-content{
             margin-right: 3px;
         }
         .content_text{
-            font-size: 4.4vw;
+            font-size: 4vw;
             margin: 0;
             margin-top: 7px;
             color: #888;
