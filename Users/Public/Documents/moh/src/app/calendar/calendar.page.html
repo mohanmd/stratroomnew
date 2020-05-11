@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>calendar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-calendar [(ngModel)]="dateRange"
+        [options]="optionsRange"
+        [type]="type"
+        [format]="'YYYY-MM-DD'">
+    </ion-calendar>
+</ion-content>

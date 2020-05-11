@@ -1,0 +1,125 @@
+.bg_dark{
+    background: #1e252d;
+    box-shadow: 0px 0px 9px 2px #000 inset, 2px 3px 3px 0px #9a9a9a !important;
+    h5{
+        color: #fff;
+    }
+}
+
+.bg_theme{
+    --background: #1e252d;
+}
+.bg_theme_green{
+    --background: #9bbf54;
+}
+.meeting{
+    background-color: #B844FB;
+    color:#fff;
+}
+.bg_scoreboard{
+    background-color: #FFCD29;
+    color:#fff;
+
+}
+.bg_budget{
+    background-color: #FFCD29;
+    color:#fff;
+
+}
+.bg_risk{
+    background-color: #FFCD29;
+    color:#fff;
+
+}
+.bg_employee{
+    background-color: #FFCD29;
+    color:#fff;}
+.bg_initiative{
+    background-color: #FFCD29;
+    color:#fff;
+
+}
+.bg_pestel{
+    background-color: #FFCD29;
+    color:#fff;
+
+}
+
+// header
+.header-logo{
+    width: 50%;
+}
+.logout{
+    filter: invert(1);
+}
+
+.sc-ion-searchbar-md{
+    border-radius: 100px !important;
+}
+ion-header{
+    ion-searchbar{
+        --box-shadow: none;
+        --background: #eee;
+        text-align: left;
+    }
+    .sc-ion-searchbar-ios-h{
+        padding-bottom: 0;
+    }
+    .right{
+        display: flex;
+        align-items: center;
+    }
+}
+ion-col{
+    text-align: center;
+
+    h5{
+        font-size: 14px;
+        margin: 0;
+        margin-top: 10px;
+    }
+}
+ion-icon{
+    font-size: 45px;
+}
+ion-grid{
+    // height: 100%;
+    //padding: 30px 15px;
+    padding: 30px 30px ;
+        ion-row{
+            height: 100%;
+            ion-col{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 1px;
+                // height: 127px;
+                
+            div{
+                //box-shadow: 0px 3px 3px 0px #ccc, 1px 0px 4px 1px #00000038 inset;
+                margin: 0px;
+                height: 100%;
+                width: 100%;
+                //padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+ion-footer{
+    box-shadow: 0px 0px 7px 0px #000;
+    ion-button{
+        width: 100%;
+        margin: 0;
+        --border-radius: 0;
+        --box-shadow: none;
+        ion-icon{
+            margin-right: 5px;
+            padding: 10px;
+        }
+    }
+}
