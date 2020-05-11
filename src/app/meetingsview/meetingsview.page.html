@@ -10,11 +10,17 @@
       <ion-button *ngIf="selectTabs == 'action' || selectTabs == 'notes'" (click)="editpopup()">
         <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg"></ion-icon>
       </ion-button>
+      <!-- <ion-button *ngIf="selectTabs == 'action' || selectTabs == 'notes'" (click)="editpopup()">
+        <ion-icon class="plus-icon" src="../../assets/icon/initiative/plus.svg"></ion-icon>
+      </ion-button> -->
       <ion-button (click)="goLogin()">
         <ion-icon  src="assets/icon/initiative/Logout.svg" color="dark" size="small"></ion-icon>        
       </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-center text_upper">My Meetings Detail</ion-title>
+    <ion-title class="ion-text-center text_upper" *ngIf="selectTabs == 'view'">Meetings View</ion-title>
+    <ion-title class="ion-text-center text_upper" *ngIf="selectTabs == 'notes'">Meetings Notes</ion-title>
+    <ion-title class="ion-text-center text_upper" *ngIf="selectTabs == 'action'">Meetings Action</ion-title>
+    <ion-title class="ion-text-center text_upper" *ngIf="selectTabs == 'attachment'">Meetings Attachment</ion-title>
   </ion-toolbar> 
   <ion-row class="header-bottom">
     <img src="assets/profile.svg">
@@ -222,8 +228,8 @@
         </ion-col>
 
         <ion-col size="6" class="ion-text-right date_col">
-          <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" ></ion-datetime>
           <ion-img src="../../assets/icon/Calender.png"></ion-img>
+          <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" ></ion-datetime>
         </ion-col>
       </ion-row>
     </ion-card>
@@ -255,8 +261,8 @@
         </ion-col>
 
         <ion-col size="6" class="ion-text-right date_col">
-          <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" ></ion-datetime>
           <ion-img src="../../assets/icon/Calender.png"></ion-img>
+          <ion-datetime value="2019-10-01T15:43:40.394Z" display-timezone="utc" ></ion-datetime>
         </ion-col>
       </ion-row>
 

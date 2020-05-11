@@ -88,7 +88,8 @@ export class InitiativeDetailPage implements OnInit {
       }
     });
     return await modal.present();
-  } async mileseditModal(value) {
+  } 
+  async mileseditModal(value) {
     // alert('2')
 
     const modal = await this.modalControler.create({
@@ -98,7 +99,8 @@ export class InitiativeDetailPage implements OnInit {
       }
     });
     return await modal.present();
-  }async editBudget(value) {
+  }
+  async editBudget(value) {
     // alert('2')
 
     const modal = await this.modalControler.create({

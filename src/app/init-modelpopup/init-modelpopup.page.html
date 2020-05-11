@@ -22,7 +22,7 @@
     <ion-title class="ion-text-center text_upper font" *ngIf="data">Add Initiative</ion-title>
     <ion-title class="ion-text-center text_upper font" *ngIf="data1">Edit Initiative</ion-title>
     <ion-title class="ion-text-center text_upper font" *ngIf="iniativedata">Edit Initiative</ion-title>
-    <ion-title class="ion-text-center text_upper font" *ngIf="edit">Add Initiative</ion-title>
+    <ion-title class="ion-text-center text_upper font" *ngIf="editinit">Add Initiative</ion-title>
   </ion-toolbar>
   <ion-row class="header-bottom">
     <img src="../../assets/profile.svg">
@@ -121,62 +121,61 @@
   </ion-item>
 
 
-  <ion-item lines="none">
-    <ion-label  position="stacked">Data fields </ion-label>
 
-  </ion-item>
 
-  <ion-row>
-
+  <ion-row class="data_fields">
+    <ion-col size="12">
+      <ion-label  position="stacked">Data fields </ion-label>
+    </ion-col>
     <ion-col size="4" class="font">
       <ion-item lines="none">
+        <ion-checkbox ></ion-checkbox>
         <ion-label>Actual</ion-label>
-        <ion-checkbox ></ion-checkbox>
       </ion-item>
     </ion-col>
 
     <ion-col size="4" class="font">
       <ion-item lines="none">
+        <ion-checkbox ></ion-checkbox>
         <ion-label>Target</ion-label>
-        <ion-checkbox ></ion-checkbox>
       </ion-item>
     </ion-col>
 
     <ion-col size="4" class="font">
       <ion-item lines="none">
+        <ion-checkbox ></ion-checkbox>
         <ion-label>Budget</ion-label>
-        <ion-checkbox ></ion-checkbox>
       </ion-item>
     </ion-col>
 
     <ion-col size="4" class="font">
       <ion-item lines="none">
+        <ion-checkbox></ion-checkbox>
         <ion-label>Forecast</ion-label>
-        <ion-checkbox></ion-checkbox>
       </ion-item>
     </ion-col>
     <ion-col size="4" class="font">
       <ion-item lines="none">
+        <ion-checkbox></ion-checkbox>
         <ion-label>Amount</ion-label>
-        <ion-checkbox></ion-checkbox>
       </ion-item>
     </ion-col>
     <ion-col size="4" class="font">
       <ion-item lines="none">
+        <ion-checkbox></ion-checkbox>
         <ion-label>Budget</ion-label>
-        <ion-checkbox></ion-checkbox>
       </ion-item>
     </ion-col>
     <ion-col size="4" class="font">
       <ion-item lines="none">
+        <ion-checkbox></ion-checkbox>
         <ion-label>Utillized</ion-label>
-        <ion-checkbox></ion-checkbox>
       </ion-item>
     </ion-col>
     <ion-col size="4" class="font">
       <ion-item lines="none">
-        <ion-label>Balance</ion-label>
         <ion-checkbox></ion-checkbox>
+        <ion-label>Balance</ion-label>
       </ion-item>
     </ion-col>
   </ion-row>

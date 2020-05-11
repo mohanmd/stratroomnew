@@ -12,4 +12,7 @@ export class MeetingsviewPage implements OnInit {
   ngOnInit() {
   }
 
+  addCard(){
+    console.log('its added');
+  }
 }

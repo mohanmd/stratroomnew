@@ -83,6 +83,15 @@ ion-content{
       font-size: 4vw;
     }
   }
+  .data_fields{
+    margin-top: 20px;
+    ion-item{
+      --padding-top: 0;
+    }
+    ion-checkbox{
+      margin-right: 5px;
+    }
+  }
 }
 ion-content{
   ion-textarea{
