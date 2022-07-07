@@ -32,7 +32,7 @@
     "core-js": "^2.5.4",
     "ion2-calendar": "^3.0.0-rc.0",
     "ionic-calendar-date-picker": "^0.1.2",
-    "moment": "^2.25.3",
+    "moment": "^2.29.4",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
